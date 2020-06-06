@@ -6,7 +6,7 @@ const Todo=({itemLists,update,deleteItem})=>{
     {
       return <div className="flex relative bg-red-500 mr-20 ml-20 justify-center mt-2">
       <div className="flex-auto  bg-red-500 max-w-full rounded overflow-hidden mt-2 mb-2">
-        <input className="ml-4 text-center text-2xl  w-240 bg-red-500  font-semibold outline-none focus:bg-red-500"type="text" id={l.key} value={l.value} onChange={
+        <input className=" text-2xl  bg-red-500  font-semibold outline-none focus:bg-red-500"type="text" id={l.key} value={l.value} onChange={
         (e)=>{
           update(e.target.value,l.key)
         }

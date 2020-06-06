@@ -71,7 +71,7 @@ class App extends Component{
     return(
       <div className="shadow-2xl">
         <Nav reset={this.resetList} />
-        <h1 className="text-6xl font-extrabold font-serif text-center mt-10" >TodoList</h1>
+        <h1 className="text-6xl sm:text-lg md:text-xl lg:text-3xl xl:text-6xl font-extrabold font-serif text-center mt-10" >TodoList</h1>
         <ListAdd searchChange={this.onSearchChange} addList={this.adList} />
         <Todo itemLists={this.state.list} update={
           this.updateList} deleteItem={this.deleteitem} value={this.state.currentitem.value}/>
